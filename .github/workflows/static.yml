@@ -38,6 +38,14 @@ jobs:
         with:
           # Upload entire repository
           path: './es'
+
+      - name: Organizar carpetas dentro de ES
+        run: |
+          cp -r css es/
+          cp -r js es/
+          cp -r img es/
+          cp -r video es/
+          cp -r en es/
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
