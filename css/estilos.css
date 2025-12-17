@@ -286,8 +286,42 @@ button {
         align-items: stretch;
     }
 
+    nav ul li {
+        margin: 0; 
+        border-bottom: 1px solid #333333; 
+    }
+    
+    nav ul li:last-child {
+        border-bottom: none; 
+    }
+
     nav ul li a {
         padding: 10px 0;
         text-align: center;
+    }
+    time {
+        position: static;
+        display: block; 
+        text-align: left; 
+        top: auto;
+        right: auto;
+        padding: 10px 20px 0 20px; 
+    }
+    
+    section {
+        padding: 10px 20px;
+    }
+    
+    .title-row {
+        flex-direction: column; 
+        align-items: flex-start;
+        margin-bottom: 10px;
+    }
+    
+    h1 {
+        text-align: left;
+    }
+    form[name="buscador"] input[name="search"] {
+        width: 60%; /* Ocupa más ancho en móvil */
     }
 }
